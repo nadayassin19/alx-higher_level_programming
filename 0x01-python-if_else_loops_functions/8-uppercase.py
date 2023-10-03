@@ -6,5 +6,5 @@ def uppercase(ch):
             num = 32
         else:
             num = 0
-        print("{0:c}".format(asc - num), end="")
+        print("{:c}".format(asc - num), end="")
     print("\n")
