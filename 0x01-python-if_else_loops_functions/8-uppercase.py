@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-def uppercase(ch):
-    for i in range(len(ch)):
-        asc = ord(ch[i])
+def uppercase(str):
+    for i in range(len(str)):
+        asc = ord(str[i])
         if asc > 96 and asc < 123:
             num = 32
         else:
