@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-print(u"\d65\d66\d67\d68\d69\d70\d71\d72\d73\d74\d75\d76",end="")
-print(u"\d77\d78\d79\d80\d81\d82\d83\d84\d85\d89\d90")
+print(u"\x41\x42\x43\x44\x45\x46\x47\x48\x49\x50\x51\x52",end="")
+print(u"\x53\x54\x55\x56\x57\x58\x59\x60\x61\x62\x63")
