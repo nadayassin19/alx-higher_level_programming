@@ -1,0 +1,1 @@
+This is read me file for the project 0x02. Python - import & modules in ALX SW program.
