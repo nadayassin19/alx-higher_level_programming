@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""a suare module that defines a suare by its size & get its area"""
+
+
 class Square:
     """it's a class that defines a square
     """
