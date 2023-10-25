@@ -20,6 +20,7 @@ class Node:
         """a property to retrieve data
         """
         return (self._data)
+
     @data.setter
     def data(self, value):
         """it's a method to set data
@@ -34,11 +35,12 @@ class Node:
         """a property to retrieve next node
         """
         return (self._next_node)
+
     @next_node.setter
     def next_node(self, value):
         """it's a method to set next node
         """
-        if value != None or type(value) != Node:
+        if value is not None or type(value) != Node:
             raise TypeError("next_node must be a Node object")
         self._next_node = value
 
@@ -80,4 +82,3 @@ class SinglyLinkedList:
             values.append(str(tmp.data))
             tmp = tmp.next_node
         return ('\n'.join(values))
-    
