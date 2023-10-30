@@ -5,7 +5,7 @@
 
 class Rectangle:
     """A class that defines a rectangle.
-    
+
     Attributes:
     number_of_instances (int): the no. of rectangle instances.
     """
@@ -75,7 +75,7 @@ class Rectangle:
 
     def __str__(self):
         """a method that prints the rectangle with the character #
-    
+
         Returns:
             str: a rectangle represented by #
         """

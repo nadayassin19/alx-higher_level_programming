@@ -69,7 +69,7 @@ class Rectangle:
 
     def __str__(self):
         """a method that prints the rectangle with the character #
-    
+
         Returns:
             str: a rectangle represented by #
         """
