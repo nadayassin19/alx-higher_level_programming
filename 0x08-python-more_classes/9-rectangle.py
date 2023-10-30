@@ -75,6 +75,33 @@ class Rectangle:
         else:
             return ((self.__height + self.__width) * 2)
 
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        """it's a method that returns the biggest rectangle based on the area
+
+        Args:
+            rect_1 (Rectangle): 1st rectangle.
+            rect_2 (Rectangle): 2nd rectangle.
+        """
+        if type(rect_1) != Rectangle:
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if type(rect_2) != Rectangle:
+            raise TypeError("rect_2 must be an instance of Rectangle")
+        if rect_1.area() >= rect_2.area():
+            return (rect_1)
+        return (rect_2)
+
+    @classmethod
+    def square(cls, size=0):
+        """it's a method that returns a new Rectangle instance
+        with width == height == size
+
+        Args:
+            size (int): it's the rectangle size (= width = hight).
+            Defaults to 0.
+        """
+        return (cls(size, size))
+
     def __str__(self):
         """a method that prints the rectangle with the character #
 
@@ -107,30 +134,3 @@ class Rectangle:
         """
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
-
-    @staticmethod
-    def bigger_or_equal(rect_1, rect_2):
-        """it's a method that returns the biggest rectangle based on the area
-
-        Args:
-            rect_1 (Rectangle): 1st rectangle.
-            rect_2 (Rectangle): 2nd rectangle.
-        """
-        if type(rect_1) != Rectangle:
-            raise TypeError("rect_1 must be an instance of Rectangle")
-        if type(rect_2) != Rectangle:
-            raise TypeError("rect_2 must be an instance of Rectangle")
-        if rect_1.area() >= rect_2.area():
-            return (rect_1)
-        return (rect_2)
-
-    @classmethod
-    def square(cls, size=0):
-        """it's a method that returns a new Rectangle instance
-        with width == height == size
-
-        Args:
-            size (int): it's the rectangle size (= width = hight).
-            Defaults to 0.
-        """
-        return (cls(size, size))
