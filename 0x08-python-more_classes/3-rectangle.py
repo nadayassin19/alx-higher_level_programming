@@ -1,80 +1,69 @@
 #!/usr/bin/python3
-"""A module to define a rectangle
-"""
+# 3-rectangle.py
+# Brennan D Baraban <375@holbertonschool.com>
+"""Defines a Rectangle class."""
 
 
 class Rectangle:
-    """A class that defines a rectangle.
-    """
+    """Represent a rectangle."""
+
     def __init__(self, width=0, height=0):
-        """initialize a new rectangle
+        """Initialize a new Rectangle.
 
         Args:
-            width (int): rectangle width. Defaults to 0.
-            height (int): rectangle height. Defaults to 0.
+            width (int): The width of the new rectangle.
+            height (int): The height of the new rectangle.
         """
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """a method to retrieve the rectangle width.
-        """
-        return (self._width)
+        """Get/set the width of the Rectangle."""
+        return self.__width
 
     @width.setter
     def width(self, value):
-        """a method to set the rectangle width
-
-        Args:
-            value (value): width value
-        """
-        if type(value) != int:
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
 
     @property
     def height(self):
-        """a method to retrieve the rectangle height.
-        """
-        return (self.__height)
+        """Get/set the height of the Rectangle."""
+        return self.__height
 
     @height.setter
     def height(self, value):
-        """a method to set the rectangle width
-
-        Args:
-            value (int): height value
-        """
-        if type(value) != int:
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
 
     def area(self):
-        """a method that returns rectangle area
-        """
-        return (self.__height * self.__width)
+        """Return the area of the Rectangle."""
+        return (self.__width * self.__height)
 
     def perimeter(self):
-        """a method that returns rectabgle perimeter
-        """
-        if (self.__width or self.__height) == 0:
+        """Return the perimeter of the Rectangle."""
+        if self.__width == 0 or self.__height == 0:
             return (0)
-        else:
-            return ((self.__height + self.__width) * 2)
+        return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
-        """a method that prints the rectangle with the character #
+        """Return the printable representation of the Rectangle.
+
+        Represents the rectangle with the # character.
         """
-        if (self.__width or self.__height) == 0:
+        if self.__width == 0 or self.__height == 0:
             return ("")
+
         rect = []
         for i in range(self.__height):
-            [rect.append("#") for j in range(self.__width)]
+            [rect.append('#') for j in range(self.__width)]
             if i != self.__height - 1:
                 rect.append("\n")
         return ("".join(rect))
