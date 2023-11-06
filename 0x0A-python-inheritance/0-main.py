@@ -1,16 +1,10 @@
 #!/usr/bin/python3
-add_attribute = __import__('101-add_attribute').add_attribute
+MyList = __import__('1-my_list').MyList
 
-class MyClass():
-    pass
-
-mc = MyClass()
-add_attribute(mc, "name", "John")
-print(mc.name)
-
-try:
-    a = "My String"
-    add_attribute(a, "name", "Bob")
-    print(a.name)
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
+my_list = MyList()
+my_list.append(50)
+my_list.append(48)
+my_list.append(66)
+print(my_list)
+my_list.print_sorted
+print(my_list)
