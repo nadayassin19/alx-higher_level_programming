@@ -1,15 +1,13 @@
 #!/usr/bin/python3
-"""A module of a class that inherits from list
+"""Defines an inherited list class MyList.
 """
 
 
 class MyList(list):
-    """It's a class that iherits from list
-
-    Args:
-        list (class): class list
+    """a class inherits from list
     """
+
     def print_sorted(self):
-        """a method that prints the list, but sorted (ascending sort)
+        """a method that prints a list in sorted ascending order.
         """
-        print(self.sort())
+        print(sorted(self))
