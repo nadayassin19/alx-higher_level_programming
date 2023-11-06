@@ -10,4 +10,6 @@ class MyList(list):
     def print_sorted(self):
         """a method that prints a list in sorted ascending order.
         """
-        print(sorted(self))
+        req_list = self.copy()
+        req_list.sort()
+        print(req_list)
