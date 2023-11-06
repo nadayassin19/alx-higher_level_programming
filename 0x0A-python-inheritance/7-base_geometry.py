@@ -10,12 +10,12 @@ class BaseGeometry:
         """initialize a base geometry
         """
         pass
-    
+
     def area(self):
         """not implemented method
         """
         raise Exception("area() is not implemented")
-    
+
     def integer_validator(self, name, value):
         """a method that validates value
 

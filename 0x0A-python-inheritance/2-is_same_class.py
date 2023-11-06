@@ -3,7 +3,6 @@
 """
 
 
-
 def is_same_class(obj, a_class):
     """it's a function that returns
     True if the object is exactly an

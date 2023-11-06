@@ -10,7 +10,7 @@ class BaseGeometry:
         """initialize a base geometry
         """
         pass
-    
+
     def area(self):
         """not implemented method
         """
