@@ -15,6 +15,6 @@ def write_file(filename="", text=""):
     """
     lines = 0
     with open(filename, 'w', encoding="utf-8") as f:
-        for l in f:
+        for line in f:
             lines += 1
         return (lines)
