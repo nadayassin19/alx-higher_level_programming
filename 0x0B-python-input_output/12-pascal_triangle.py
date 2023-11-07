@@ -2,6 +2,7 @@
 """a module pf a function that retrieve pascal triangle
 """
 
+
 def pascal_triangle(n):
     """a function that returns a list of lists of integers
     representing the Pascal's triangle of n
