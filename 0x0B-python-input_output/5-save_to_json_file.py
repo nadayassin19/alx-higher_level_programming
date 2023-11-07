@@ -11,7 +11,7 @@ def save_to_json_file(my_obj, filename):
     to a text file, using a JSON representation
 
     Args:
-        my_obj (any): object to be saved
+        my_obj: object to be saved
         filename (str): the file to be saved
     """
     with open(filename, 'w', encoding="utf-8") as f:

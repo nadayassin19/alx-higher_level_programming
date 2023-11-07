@@ -11,6 +11,6 @@ def to_json_string(my_obj):
     of an object (string).
 
     Args:
-        my_obj (any): the data to be converted into json data.
+        my_obj: the data to be converted into json data.
     """
     return (json.dumps(my_obj))
