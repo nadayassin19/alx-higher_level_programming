@@ -31,6 +31,7 @@ class Rectangle(Base):
         """to retrie the width
         """
         return (self.__width)
+
     @width.setter
     def width(self, value):
         """a method to set the width value
@@ -44,12 +45,12 @@ class Rectangle(Base):
             raise ValueError("width must be > 0")
         self.__width = value
 
-
     @property
     def height(self):
         """to retrie the height
         """
         return (self.__height)
+
     @height.setter
     def height(self, value):
         """a method to set the height value
@@ -63,12 +64,12 @@ class Rectangle(Base):
             raise ValueError("height must be > 0")
         self.__height = value
 
-
     @property
     def x(self):
         """to retrie the x
         """
         return (self.__x)
+
     @x.setter
     def x(self, value):
         """a method to set the x value
@@ -82,12 +83,12 @@ class Rectangle(Base):
             raise ValueError("x must be >= 0")
         self.__x = value
 
-
     @property
     def y(self):
         """to retrie the y
         """
         return (self.__y)
+
     @y.setter
     def y(self, value):
         """a method to set the y value
@@ -100,7 +101,6 @@ class Rectangle(Base):
         elif value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
-
 
     def area(self):
         """a method to get the area of the rectangle
@@ -126,7 +126,8 @@ class Rectangle(Base):
         """
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
                                                         self.x, self.y,
-                                                        self.width, self.height))
+                                                        self.width,
+                                                        self.height))
 
     def to_dictionary(self):
         """Return the dictionary representation of a Rectangle."""
