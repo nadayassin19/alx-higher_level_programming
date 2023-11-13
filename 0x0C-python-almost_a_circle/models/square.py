@@ -27,7 +27,8 @@ class Square(Rectangle):
         """a method that returns the square location and its dimensions
         """
         return ("[Square] ({}) {}/{} - {}".format(self.id,
-                 self.x, self.y, self.width))
+                                                  self.x, self.y,
+                                                  self.width))
 
     @property
     def size(self):
