@@ -2,7 +2,7 @@
 """a module of a class square that inherits from
 a class rectangle
 """
-from rectangle import Rectangle
+from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
@@ -22,7 +22,7 @@ class Square(Rectangle):
             id (int): the square id Defaults to None.
         """
         super().__init__(size, size, x, y, id)
-    
+
     def __str__(self):
         """a method that returns the square location and its dimensions
         """
@@ -45,6 +45,4 @@ class Square(Rectangle):
         """
         self.width = value
         self.height = value
-
-
-    
+   
