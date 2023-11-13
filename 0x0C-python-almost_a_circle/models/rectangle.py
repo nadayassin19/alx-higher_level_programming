@@ -129,16 +129,6 @@ class Rectangle(Base):
                                                         self.width,
                                                         self.height))
 
-    def to_dictionary(self):
-        """Return the dictionary representation of a Rectangle."""
-        return {
-            "id": self.id,
-            "width": self.width,
-            "height": self.height,
-            "x": self.x,
-            "y": self.y
-        }
-
     def update(self, *args, **kwargs):
         """a method that assigns an argument to each attribute,
         here, the number of attributes is unknown.
@@ -176,3 +166,13 @@ class Rectangle(Base):
                     self.x = k
                 elif j == "y":
                     self.y = k
+
+    def to_dictionary(self):
+        """Return the dictionary representation of a Rectangle."""
+        return {
+            "x": self.x,
+            "y": self.y,
+            "id": self.id,
+            "height": self.height,
+            "width": self.width
+        }
