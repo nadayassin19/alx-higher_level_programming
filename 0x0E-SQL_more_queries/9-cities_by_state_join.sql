@@ -1,6 +1,7 @@
 -- 9. Cities by States
 -- A script that lists all cities contained in the database.
 
-FROM cities
-JOIN states ON cities.state_id = states.id
-SELECT cities.id, cities.name, states.name;
+SELECT c.id, c.name, s.name
+FROM cities AS c INNER JOIN states AS s
+ON c.states_id = s.id
+ORDER BY c.id;
