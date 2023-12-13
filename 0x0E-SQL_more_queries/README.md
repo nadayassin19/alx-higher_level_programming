@@ -1,0 +1,1 @@
+This is read me file for the project 0x0E. SQL - More queries in ALX SWE Program.
