@@ -1,3 +1,4 @@
 #!/usr/bin/node
-myArg = process.number(argv[2]);
-console.log(myArg === NaN ? 'Not a number' : 'My number:' + myArg);
+const myArg = process.argv[2];
+const myArgInt = Number(myArg);
+console.log(myArgInt === NaN ? 'Not a number' : 'My number:' + myArgInt);
