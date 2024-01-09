@@ -6,9 +6,9 @@ class Square extends superSquare {
     if (c === undefined) {
       c = 'X';
     }
-    for (let i = 0, s; i < this.height; i++) {
-      s = '';
-      for (let j = 0; j < this.wid; j++) {
+    for (let i = 0; i < this.height; i++) {
+      let s = '';
+      for (let j = 0; j < this.width; j++) {
         s += c;
       }
       console.log(s);
