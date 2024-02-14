@@ -1,1 +1,0 @@
-This is read me file for the project 0x13. JavaScript - Objects, Scopes and Closures in ALX SWE program.
