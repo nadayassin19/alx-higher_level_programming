@@ -1,0 +1,1 @@
+This is read me file for the project 0x12. JavaScript - Warm up in ALX SWE program.
