@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" class definition of a State and an instance Base = declarative_base() """
+""" A module of class State and an instance Base = declarative_base()
+"""
 import sys
 from model_state import Base, State
 from sqlalchemy import (create_engine)
